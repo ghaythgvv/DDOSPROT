@@ -185,7 +185,7 @@ client.on(Events.MessageCreate, async (message) => {
   const p = config.prefix;
 
   switch (cmd.toLowerCase()) {
-    case 'join': {
+    case 'aurafarm': {
       const channel = message.member.voice.channel;
       if (!channel) return message.reply('Join a voice channel first.');
       const connection = joinVoiceChannel({
@@ -244,7 +244,7 @@ client.on(Events.MessageCreate, async (message) => {
     case 'help':
       return message.reply(
         [
-          `**${p}join** - join your voice channel and watch for lag until everyone leaves`,
+          `**${p}aurafarm** - join your voice channel and watch for lag until everyone leaves`,
           `**${p}leave** - leave the voice channel`,
           `**${p}ping** - show current voice latency and region`,
           `**${p}pardon @user** - clear someone's strikes (Manage Server)`,
