@@ -1,0 +1,19 @@
+{
+  "name": "vcguard",
+  "version": "1.0.0",
+  "description": "Discord bot that watches voice-channel lag, switches the region, and flags the likely cause.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@discordjs/voice": "^0.19.2",
+    "@snazzah/davey": "^0.1.10",
+    "discord.js": "^14.25.1",
+    "dotenv": "^16.4.5"
+  }
+}
